@@ -1,0 +1,22 @@
+.clearfix:after,
+.m-header:after,
+.m-news .video:after,
+.m-news .video li:after,
+.g-content:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.clearfix,
+.m-header,
+.m-news .video,
+.m-news .video li,
+.g-content {
+  zoom: 1;
+}
+.jiathis_style * {
+  box-sizing: content-box;
+}

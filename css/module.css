@@ -1,0 +1,23 @@
+.m-page {
+  text-align: right;
+}
+.m-page li {
+  display: inline-block;
+  margin-left: 5px;
+}
+.m-page a,
+.m-page .cur {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+.m-page .pageprv,
+.m-page .pagenext {
+  width: auto;
+  height: auto;
+}
+.m-page .cur {
+  display: inline-block;
+}

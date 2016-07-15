@@ -1,0 +1,128 @@
+// 按钮
+.u-btn {
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 40px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: @c-primary;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+
+  &:hover{
+    color: #fff;
+    background-color: darken(@c-primary, 5%);
+  }
+}
+
+.u-btn-c1{
+   background-color: @c-gray1;
+   border-color: @c-gray2;
+   color: @text-black;
+
+   &:hover{
+     color: @text-black;
+     background-color: darken(@c-gray1, 5%);
+   }
+ }
+
+.u-btn-c2{
+  background-color: @c-white;
+  border-color: @c-gray3;
+  color: @text-black;
+
+  &:hover{
+    color: @text-black;
+    background-color: darken(@c-gray1, 5%);
+  }
+}
+
+.u-btn-c3{
+  background-color: @c-white;
+  border-color: #e5006e;
+  color: #e5006e;
+
+  &:hover{
+    color: darken(#e5006e, 10%);
+    border-color: darken(#e5006e, 10%);
+    background-color: #fff;
+  }
+}
+.u-btn-c4{
+  background-color: #e5006e;
+  border-color: #e5006e;
+  color: #fff;
+
+  &:hover{
+    color: #fff;
+    border-color: darken(#e5006e, 10%);
+    background-color: darken(#e5006e, 10%);
+  }
+}
+
+
+.u-btn-sm{
+  height:40px;
+  line-height:40px;
+}
+
+.u-btn-block{
+  display: block;
+}
+
+// 按钮组
+.u-btns{display:inline-block;position:relative;}
+.u-btns .u-btn{float:left;margin-left:-1px;border-radius:0;}
+.u-btns .u-btn:first-child{margin-left:0;border-radius:5px 0 0 5px;}
+.u-btns .u-btn:nth-last-of-type(1){border-radius:0 5px 5px 0;}
+.u-btns .u-btn:only-of-type{border-radius:5px;}
+
+// 表单
+.u-ipt{
+  height:48px;
+  line-height:48px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: @c-gray1;
+  font-size: 16px;
+}
+
+.u-ipt-block{
+  width:100%;
+}
+
+// 小图标
+.u-icon{
+  display: inline-block;
+  width:24px;
+  height:24px;
+  line-height:24px;
+  vertical-align: middle;
+  background: url(../img/sprite.png) no-repeat;
+}
+.u-icon-1{
+  background-position: -10px -114px;
+}
+.u-icon-2{
+  background-position: -10px -196px;
+}
+.u-icon-3{
+  background-position: -10px -220px;
+}
+.u-icon-4{
+  background-position: -10px -244px;
+}
+.u-icon-5{
+  background-position: -10px -268px;
+}
+
+// 颜色
+.u-c1{
+  color: @c-primary;
+}
+.u-c2{
+  color: #e5006e;
+}
