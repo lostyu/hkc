@@ -7,7 +7,12 @@
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta content="telephone=no" name="format-detection">
     <title>首页</title>
+    <!-- plugin -->
+    <!-- /plugin -->
     <link rel="stylesheet" href="css/all.css">
+
+
+
 </head>
 <body>
 
@@ -33,7 +38,18 @@
 <!-- /头部 -->
 
 <!-- banner -->
-<div class="m-banner"></div>
+<div class="m-banner">
+
+    <div class="m-slider" id="slider1">
+        <ul>
+            <li class="first" style="background-image: url(img/banner1.jpg);"></li>
+            <li style="background-image: url(img/banner2.jpg);"></li>
+            <li style="background-image: url(img/banner3.jpg);"></li>
+        </ul>
+        <div class="pointer"><span class="z-crt"></span><span></span><span></span></div>
+    </div>
+
+</div>
 <!-- /banner -->
 
 <!-- 简介 -->
@@ -74,7 +90,14 @@
         <h2>新闻资讯</h2>
         <div class="titleBg"><img src="img/img-news.png" alt=""></div>
         <div class="video">
-            <video controls></video>
+            <div class="v">
+                <embed type="application/x-shockwave-flash" src="plugin/video/player.swf" id="f4Player" width="748" height="410" flashvars="skin=plugin/video/skins/mySkin.swf&video=../../video/v.mp4&thumbnail=http://img.fotomen.cn/2012/11/500px02.jpg" allowscriptaccess="always" allowfullscreen="true" bgcolor="#000000"/>
+                <noembed>
+                    You need Adobe Flash Player to watch this video.
+                    <a href="http://get.adobe.com/flashplayer/">Download it from Adobe.</a>
+                    <a href="http://gokercebeci.com/dev/f4player" title="flv player">flv player</a>
+                </noembed>
+            </div>
             <ul>
                 <li>
                     <a href="javascript:;"><img src="" alt=""></a>
@@ -174,7 +197,7 @@
         </div>
         <ul class="follow">
             <li class="text">关注我们</li>
-            <li><a class="icon wx" href="javascript:;"><img width="100" height="100" src="" alt=""></a></li>
+            <li><a class="icon wx" href="javascript:;"><img width="100" height="100" src="img/img-ewm.jpg" alt=""></a></li>
             <li><a class="icon db" href="javascript:;"></a></li>
             <li><a class="icon wb" href="javascript:;"></a></li>
             <li><a class="icon dz" href="javascript:;"></a></li>
@@ -184,6 +207,18 @@
 <!-- /m-footer -->
 
 <script src="lib/jquery/1.11.1/jquery.min.js"></script>
+<!-- plugin -->
+
+<!-- /plugin -->
 <script src="js/app.js"></script>
+<script>
+    $(function(){
+
+        var slider = new Slider('slider1');
+
+    });
+
+
+</script>
 </body>
 </html>

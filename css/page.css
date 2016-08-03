@@ -17,6 +17,87 @@
 .g-content {
   zoom: 1;
 }
+.uploadify-queue {
+  display: none;
+}
 .jiathis_style * {
   box-sizing: content-box;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+label.error {
+  color: red;
+  font-size: 14px;
+}
+.errPlace {
+  position: absolute;
+  right: -210px;
+  top: 24px;
+  width: 200px;
+}
+.m-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.m-slider ul {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.m-slider ul li {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: center no-repeat;
+}
+.m-slider ul li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.m-slider ul li.first {
+  display: block;
+}
+.m-slider .pointer {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  width: 100%;
+  height: 14px;
+  text-align: center;
+}
+.m-slider .pointer span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #555;
+  cursor: pointer;
+}
+.m-slider .pointer .z-crt {
+  background-color: #e5006e;
+}
+.m-news .video .video-js {
+  float: left;
+  margin-right: 20px;
+}
+.m-banner2 {
+  height: 350px;
+  background: #ddd center no-repeat;
+}
+.m-banner2 .g-wrap {
+  position: relative;
+  height: 350px;
+}
+.m-banner2 .g-wrap .u-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
 }

@@ -11,118 +11,235 @@
   font-size: 16px;
   text-align: center;
 
-  &:hover{
+  &:hover {
     color: #fff;
     background-color: darken(@c-primary, 5%);
   }
 }
 
-.u-btn-c1{
-   background-color: @c-gray1;
-   border-color: @c-gray2;
-   color: @text-black;
-
-   &:hover{
-     color: @text-black;
-     background-color: darken(@c-gray1, 5%);
-   }
- }
-
-.u-btn-c2{
-  background-color: @c-white;
-  border-color: @c-gray3;
+.u-btn-c1 {
+  background-color: @c-gray1;
+  border-color: @c-gray2;
   color: @text-black;
 
-  &:hover{
+  &:hover {
     color: @text-black;
     background-color: darken(@c-gray1, 5%);
   }
 }
 
-.u-btn-c3{
+.u-btn-c2 {
+  background-color: @c-white;
+  border-color: @c-gray3;
+  color: @text-black;
+
+  &:hover {
+    color: @text-black;
+    background-color: darken(@c-gray1, 5%);
+  }
+}
+
+.u-btn-c3 {
   background-color: @c-white;
   border-color: #e5006e;
   color: #e5006e;
 
-  &:hover{
+  &:hover {
     color: darken(#e5006e, 10%);
     border-color: darken(#e5006e, 10%);
     background-color: #fff;
   }
 }
-.u-btn-c4{
+
+.u-btn-c4 {
   background-color: #e5006e;
   border-color: #e5006e;
   color: #fff;
 
-  &:hover{
+  &:hover {
     color: #fff;
     border-color: darken(#e5006e, 10%);
     background-color: darken(#e5006e, 10%);
   }
 }
 
+.u-btn-c5{
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
 
-.u-btn-sm{
-  height:40px;
-  line-height:40px;
+  &:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+  }
 }
 
-.u-btn-block{
+.u-btn-sm {
+  height: 40px;
+  line-height: 40px;
+}
+
+.u-btn-block {
   display: block;
-}
-
-// 按钮组
-.u-btns{display:inline-block;position:relative;}
-.u-btns .u-btn{float:left;margin-left:-1px;border-radius:0;}
-.u-btns .u-btn:first-child{margin-left:0;border-radius:5px 0 0 5px;}
-.u-btns .u-btn:nth-last-of-type(1){border-radius:0 5px 5px 0;}
-.u-btns .u-btn:only-of-type{border-radius:5px;}
-
-// 表单
-.u-ipt{
-  height:48px;
-  line-height:48px;
-  padding: 0 10px;
-  border: none;
-  border-radius: 3px;
-  background-color: @c-gray1;
-  font-size: 16px;
-}
-
-.u-ipt-block{
   width:100%;
 }
 
-// 小图标
-.u-icon{
+// 按钮组
+.u-btns {
   display: inline-block;
-  width:24px;
-  height:24px;
-  line-height:24px;
+  position: relative;
+}
+
+.u-btns .u-btn {
+  float: left;
+  margin-left: -1px;
+  border-radius: 0;
+}
+
+.u-btns .u-btn:first-child {
+  margin-left: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.u-btns .u-btn:nth-last-of-type(1) {
+  border-radius: 0 5px 5px 0;
+}
+
+.u-btns .u-btn:only-of-type {
+  border-radius: 5px;
+}
+
+// 表单
+.u-ipt {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 10px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.u-ipt-block {
+  width: 100%;
+}
+
+.u-ipt-w200 {
+  width: 200px;
+}
+
+.u-ipt-w400 {
+  width: 400px;
+}
+
+.u-sel {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+.u-text{
+  padding: 10px;
+  width:100%;
+  border-radius: 3px;
+}
+
+.u-help{
+  margin-top:5px;
+  line-height:normal;
+  color: #666;
+  font-size:14px;
+}
+
+/* 定制文件上传按钮  */
+.u-upload {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.u-upload button {
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #00ccff;
+  border-radius: 3px;
+  overflow: visible;
+  font-size: 14px;
+  color: #fff;
+  background: #00ccff;
+}
+
+.u-upload input {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  font-size: 100px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.u-upload:hover button {
+  border-color: darken(#00ccff, 10%);
+  color: #fff;
+  background: darken(#00ccff, 10%);
+}
+
+a.u-upload, a.u-upload:hover {
+  text-decoration: none;
+}
+
+// 小图标
+.u-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
   vertical-align: middle;
   background: url(../img/sprite.png) no-repeat;
 }
-.u-icon-1{
+
+.u-icon-1 {
   background-position: -10px -114px;
 }
-.u-icon-2{
+
+.u-icon-2 {
   background-position: -10px -196px;
 }
-.u-icon-3{
+
+.u-icon-3 {
   background-position: -10px -220px;
 }
-.u-icon-4{
+
+.u-icon-4 {
   background-position: -10px -244px;
 }
-.u-icon-5{
+
+.u-icon-5 {
   background-position: -10px -268px;
 }
 
+.u-icon-6 {
+  background-position: -10px -292px;
+}
+
+.u-icon-7 {
+  background-position: -10px -316px;
+}
+
 // 颜色
-.u-c1{
+.u-c1 {
   color: @c-primary;
 }
-.u-c2{
+
+.u-c2 {
   color: #e5006e;
+}
+
+// 线
+.u-line{
+  border-top:1px solid #ddd;
 }

@@ -174,6 +174,41 @@
   }
 }
 
+.m-list5{
+  overflow: hidden;
+  line-height:35px;
+  li{
+    float: left;
+    width:50%;
+    &.w100{
+      width:100%;
+    }
+  }
+  .tit{
+    color: #999;
+    margin-right:5px;
+  }
+}
+.m-list5-3{
+  li{
+    width:33.333%;
+  }
+}
+
+.m-imgList{
+  overflow: hidden;
+  margin:-10px 0 0 -10px;
+  li{
+    float: left;
+    margin-left:10px;
+    margin-top:10px;
+    img{
+      margin-bottom:10px;
+    }
+    text-align: center;
+  }
+}
+
 // 文章
 .m-article{
   .title{
@@ -211,6 +246,41 @@
     border-left: 4px solid @c-primary;
     color: #555;
   }
+}
+
+// 表单
+.m-form{
+  .formitm{
+    position: relative;
+    padding-top:20px;
+    line-height:40px;
+  }
+  .formLabel{
+    float: left;
+    width:150px;
+    margin-right:-150px;
+    text-align: right;
+    color: #999;
+  }
+  .formControl{
+    margin-left:170px;
+    .u-ipt{
+      height:40px;
+      line-height:40px;
+    }
+  }
+}
+
+// 空
+.m-empty{
+  padding: 50px;
+  text-align: center;
+}
+
+//
+.m-box{
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 // 头部
@@ -400,10 +470,12 @@
 }
 
 
+
+
 // ============================= 首页
 // banner
 .m-banner {
-  height: 500px;
+  height: 536px;
   background-color: #ddd;
 }
 
@@ -418,6 +490,7 @@
   p {
     padding: 0 140px;
     line-height: 30px;
+    font-size:18px;
   }
   a {
     width: 300px;
@@ -497,7 +570,7 @@
 
   .video {
     margin-top: 50px;
-    video {
+    .v {
       float: left;
       width: 748px;
       height: 410px;
@@ -642,6 +715,35 @@
 
 
 // ============================= 人才招募
+.m-recruitTop{
+  overflow: hidden;
+  margin-bottom:40px;
+  margin-left: -40px;
+  li{
+    position: relative;
+    float: left;
+    width: 580px;
+    height:200px;
+    margin-left:40px;
+    img{
+      display: block;
+      width:580px;
+      height:200px;
+    }
+    p{
+      position: absolute;
+      bottom:0;
+      width:100%;
+      line-height:44px;
+      text-indent: 1em;
+      background-color: rgba(0, 0, 0, .5);
+    }
+    a{
+      color: #fff;
+    }
+  }
+}
+
 .m-recruitList{
   .col1{
     width: 205px;
@@ -709,6 +811,7 @@
         margin-left:10px;
         background: url(../img/sprite.png) -10px -148px no-repeat;
         vertical-align: middle;
+        cursor: pointer;
       }
     }
   }
@@ -767,6 +870,39 @@
   }
 }
 
+.m-recruitList-1{
+  .col1{
+    width: 200px;
+    padding-left:30px;
+  }
+  .col2{
+    width:117px;
+  }
+  .col3{
+    width:117px;
+  }
+  .col4{
+    width:117px;
+  }
+  .col5{
+    width:117px;
+  }
+  .col6{
+    width:117px;
+  }
+  .subTitle{
+    li{
+      &.col1{
+        width:198px;
+      }
+      &.col5{
+        width:117px;
+      }
+    }
+
+  }
+}
+
 .m-recruitSide{
   .info{
     margin-bottom:20px;
@@ -813,6 +949,9 @@
         background-color: #f3f3f3;
       }
     }
+    li.z-crt a{
+      background-color: #f3f3f3;
+    }
   }
 }
 .m-pcenter{
@@ -845,9 +984,185 @@
     }
   }
 }
+.m-jlgl{
+  .infoStatus{
+    margin: 40px 0;
+    ul{
+      overflow: hidden;
+      text-align: center;
+      background: url(../img/bg-line.png) center 17px no-repeat;
+    }
+    li{
+      display: inline-block;
+      width:16%;
+    }
+    .err .icon{
+      background-position: -90px -114px;
+    }
+    .icon{
+      width:34px;
+      height:34px;
+      margin-left:auto;
+      margin-right:auto;
+      margin-bottom:20px;
+      background: url(../img/sprite.png) -50px -114px no-repeat;
+    }
+  }
+  .infoList{
+    .item{
+      margin-bottom:40px;
+      .box{
+        padding: 20px;
+        background-color: #f9f9f9;
+        .tit{
+          padding-right:5px;
+          color: #999;
+        }
+      }
+      .box{
+        label.error{
+          margin-left:10px;
+        }
+      }
+    }
+  }
+  .yulan{
+  }
+  .yulan-user{
+    overflow: hidden;
+    .text{
+      float: left;
+      width:80%;
+    }
+    .pic{
+      float: right;
+    }
+  }
+}
+
+// 创建简历
+.m-form-info{
+  position: relative;
+  .tx{
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    img{
+      display: block;
+      margin-bottom:10px;
+    }
+    a{
+      display: block;
+      button{
+        width:100%;
+      }
+    }
+  }
+}
 
 
+// ============================= 登录注册
+.m-register{
+  .registerBox{
+    width:440px;
+    margin-left:auto;
+    margin-right:auto;
 
+    .youxiang{
+      display: none;
+    }
+    .m-form{
+      .u-ipt{
+        width:100%;
+        border-color: #f3f3f3;
+        background-color: #f3f3f3;
+      }
+      .text{
+        font-size: 14px;
+      }
+      .yzm{
+        &:after{
+          content: '';
+          display: block;
+          clear: both;
+          height:0;
+          visibility: hidden;
+          overflow: hidden;
+        }
+        input{
+          float: left;
+          width:220px;
+        }
+        .u-btns{
+          float: right;
+          width:210px;
+          display: block;
+          height: 48px;
+          line-height:48px;
+          .btn{
+            width:104px;
+            padding: 0;
+          }
+        }
+        .btnsj{
+          float: right;
+          width:210px;
+        }
+      }
+    }
+
+    .other{
+      margin-top:30px;
+      .line{
+        position: relative;
+        top: 10px;
+        border-bottom:1px solid #f3f3f3;
+      }
+      .title{
+        position: relative;
+        text-align: center;
+        span{
+          padding:0 20px;
+          background-color: #fff;
+          color: #999;
+          font-size:14px;
+        }
+      }
+
+      .list{
+        margin-top:38px;
+        text-align: center;
+        li{
+          display: inline-block;
+          a{
+            display: block;
+            color: #555;
+            font-size:12px;
+            .icon{
+              display: block;
+              width: 44px;
+              height:44px;
+              margin-left:auto;
+              margin-right:auto;
+              margin-bottom:10px;
+            }
+          }
+        }
+        .qq{
+          margin-right: 58px;
+          .icon{
+            background: url(../img/sprite.png) -50px -158px no-repeat;
+          }
+        }
+        .wx{
+          .icon{
+            background: url(../img/sprite.png) -104px -158px no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 

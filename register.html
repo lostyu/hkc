@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+
+<!-- 头部 -->
+<div class="m-header">
+    <div class="g-wrap">
+        <h1 class="logo"><a href="#" title="HKC">HKC</a></h1>
+        <ul class="nav">
+            <li><a href="javascript:;">公司概况</a></li>
+            <li><a href="javascript:;">核心业务</a></li>
+            <li><a href="javascript:;">新闻资讯</a></li>
+            <li><a href="javascript:;">人才招募</a></li>
+            <li><a href="javascript:;">个人中心</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="请输入关键字">
+        </div>
+        <div class="login">
+            <a href="javascript:;">注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:;">登陆</a>
+        </div>
+    </div>
+</div>
+<!-- /头部 -->
+
+<div class="m-banner2" style="background-image: url(img/banner-denglu.jpg);"></div>
+
+
+<div class="g-wrap">
+    <div class="f-pt30 f-pb30">
+        <div class="g-content">
+            <div class="m-register">
+                <div class="registerBox">
+                    已有账号？<a class="u-c1" href="javascript:;">立即登录</a>
+                    <div style="padding-top: 20px;">
+                        <label style="margin-right:50px;"><input name="sel" type="radio" checked class="j-sjh">
+                            手机号注册</label>
+                        <label><input name="sel" type="radio" class="j-email"> 邮箱注册</label>
+                    </div>
+                    <form class="m-form shouji j-shouji" id="form1" method="post" action="">
+                        <div class="formitm">
+                            <input name="uname1" class="u-ipt" type="text" placeholder="请输入姓名">
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm yzm">
+                            <input name="uyzm1" class="u-ipt" type="text" placeholder="请输入验证码">
+                            <span class="u-btns">
+                                <a style="padding:0;" href="javascript:;" class="u-btn u-btn-c2"><img width="104"
+                                                                                                      height="46"
+                                                                                                      src="http://reg.email.163.com/mailregAll/regvf1/verifyCodeImgF.jsp?env=488381217144&amp;type=en&amp;t=1333003692444"
+                                                                                                      alt=""></a>
+                                <a href="javascript:;" class="u-btn u-btn-c2 btn">刷新</a>
+                            </span>
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm">
+                            <input name="usjh1" class="u-ipt" type="text" placeholder="请输入手机号">
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm yzm">
+                            <input name="uyzm2" class="u-ipt" type="text" placeholder="请输入手机验证码">
+                            <a class="u-btn btnsj" href="javascript:;">获取验证码</a>
+                            <div class="errPlace"></div>
+                        </div>
+
+
+                        <div class="formitm">
+                            <input id="upass1" name="upass1" class="u-ipt" type="password" placeholder="请输入密码">
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm">
+                            <input name="upass2" class="u-ipt" type="password" placeholder="请再次输入密码">
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm text">
+                            <label><input name="ucheck1" type="checkbox"> 我已阅读并接受</label> <a href="javascript:;"
+                                                                                                    class="u-c1 j-openxy">《重庆惠科金渝光电科技有限公司注册协议》</a>
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm text">
+                            <input type="submit" class="u-btn u-btn-block" value="注册">
+                        </div>
+
+                    </form>
+
+
+                    <form class="m-form youxiang j-youxiang" id="form2">
+
+                        <div class="formitm">
+                            <input name="uname2" class="u-ipt" type="text" placeholder="请输入姓名">
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm">
+                            <input name="uemail2" class="u-ipt" type="text" placeholder="请输入邮箱">
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm yzm">
+                            <input name="uyzm3" class="u-ipt" type="text" placeholder="请输入验证码">
+                            <span class="u-btns">
+                                <a style="padding:0;" href="javascript:;" class="u-btn u-btn-c2"><img width="104"
+                                                                                                      height="46"
+                                                                                                      src="http://reg.email.163.com/mailregAll/regvf1/verifyCodeImgF.jsp?env=488381217144&amp;type=en&amp;t=1333003692444"
+                                                                                                      alt=""></a>
+                                <a href="javascript:;" class="u-btn u-btn-c2 btn">刷新</a>
+                            </span>
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm">
+                            <input id="upass3" name="upass3" class="u-ipt" type="password" placeholder="请输入密码">
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm">
+                            <input name="upass4" class="u-ipt" type="password" placeholder="请再次输入密码">
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm text">
+                            <label><input name="ucheck2" type="checkbox"> 我已阅读并接受</label> <a href="javascript:;" class="u-c1 j-openxy">《重庆惠科金渝光电科技有限公司注册协议》</a>
+                            <div class="errPlace"></div>
+                        </div>
+
+                        <div class="formitm text">
+                            <input type="submit" class="u-btn u-btn-block" value="注册">
+                        </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- m-footer -->
+<div class="m-footer">
+    <div class="g-wrap f-pr">
+        <div class="logo"></div>
+        <div class="info">
+            <ul class="link">
+                <li><a href="javascript:;">公司概况</a><span>|</span></li>
+                <li><a href="javascript:;">核心业务</a><span>|</span></li>
+                <li><a href="javascript:;">新闻资讯</a><span>|</span></li>
+                <li><a href="javascript:;">人才招募</a><span>|</span></li>
+                <li><a href="javascript:;">个人中心</a></li>
+            </ul>
+            <address>
+                &copy; 重庆惠科金渝光电 渝ICP备1100000号 重庆市巴南区界石镇数码产业园 电话：023-81158888 传真：023-81158888<br/>
+                Chongqing Jieshi Banan Digital Industrial Park area 邮箱：<a href="mailto:jinyuguangdian@szhk.com.cn">jinyuguangdian@szhk.com.cn</a>
+            </address>
+        </div>
+        <ul class="follow">
+            <li class="text">关注我们</li>
+            <li><a class="icon wx" href="javascript:;"><img width="100" height="100" src="" alt=""></a></li>
+            <li><a class="icon db" href="javascript:;"></a></li>
+            <li><a class="icon wb" href="javascript:;"></a></li>
+            <li><a class="icon dz" href="javascript:;"></a></li>
+        </ul>
+    </div>
+</div>
+<!-- /m-footer -->
+
+<script src="lib/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- plugin -->
+<script src="plugin/jqueryvalidation/jquery.validate.min.js"></script>
+<script src="plugin/jqueryvalidation/localization/messages_zh.min.js"></script>
+<!-- /plugin -->
+
+<script src="js/app.js"></script>
+<script>
+    $(function () {
+
+        // 手机邮箱注册切换
+        $('.j-sjh').click(function () {
+            $('.j-shouji').show();
+            $('.j-youxiang').hide();
+        });
+        $('.j-email').click(function () {
+            $('.j-shouji').hide();
+            $('.j-youxiang').show();
+        });
+
+
+        // 表单
+        $("#form1").validate({
+            rules: {
+                uname1:{
+                  required: true
+                },
+                uyzm1:{
+                    required: true
+                },
+                usjh1:{
+                    required: true,
+                    tel: true
+                },
+                uyzm2:{
+                    required: true
+                },
+                upass1:{
+                    required: true,
+                    minlength: 6
+                },
+                upass2: {
+                    required: true,
+                    minlength: 6,
+                    equalTo: "#upass1"
+                },
+                ucheck1:{
+                    required: true
+                }
+            },
+            messages:{
+                uname1:{
+                    required: '请输入姓名'
+                },
+                uyzm1:{
+                    required: '请输入验证码'
+                },
+                usjh1:{
+                    required: '请输入手机号'
+                },
+                uyzm2:{
+                    required: '请输入手机验证码'
+                },
+                upass1:{
+                    required: '请输入密码',
+                    minlength: '密码最小长度为6位'
+                },
+                upass2: {
+                    required: '请再次输入密码',
+                    minlength: '密码最小长度为6位',
+                    equalTo: '两次密码不一致'
+                },
+                ucheck1:{
+                    required: '请同意该协议'
+                }
+            },
+            errorPlacement:function(error, element){
+                error.appendTo(element.parents('.formitm').find('.errPlace'));
+            }
+        });
+
+
+        $("#form2").validate({
+            rules: {
+                uname2:{
+                    required: true
+                },
+                uemail2:{
+                    required: true,
+                    email: true
+                },
+                uyzm3:{
+                    required: true
+                },
+                upass3:{
+                    required: true
+                },
+                upass4: {
+                    required: true,
+                    minlength: 6,
+                    equalTo: "#upass3"
+                },
+                ucheck2:{
+                    required: true
+                }
+            },
+            messages:{
+                uname2:{
+                    required: '请输入姓名'
+                },
+                uemail2:{
+                    required: '请输入邮箱',
+                    email: '请输入正确的邮箱'
+                },
+                uyzm3:{
+                    required: '请输入验证码'
+                },
+                upass3:{
+                    required: '请输入密码'
+                },
+                upass4: {
+                    required: '请再次输入密码',
+                    minlength: '密码最小长度为6位',
+                    equalTo: '两次密码不一致'
+                },
+                ucheck2:{
+                    required: '请同意该协议'
+                }
+            },
+            errorPlacement:function(error, element){
+                error.appendTo(element.parents('.formitm').find('.errPlace'));
+            }
+        });
+
+    });
+</script>
+</body>
+</html>
